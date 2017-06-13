@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  position: relative;
 }
 .container {
   background-image: url(../img/hero.jpg);
@@ -50,6 +51,10 @@ li {
   text-transform: uppercase;
 }
 
+li:hover {
+  color: #dc7725;
+}
+
 li .arrow {
   width: 12px;
   padding-left: 5px;
@@ -98,6 +103,13 @@ h5 {
   border-radius: 100%;
   background: rgba(255,255,255,0.3);
   position: relative;
+  transition: all .2s ease-in-out;
+}
+
+.play:hover {
+  transform: scale(1.2);
+  background-color: white;
+  opacity: .5;
 }
 
 .play img {
@@ -117,9 +129,121 @@ h5 {
   letter-spacing: 2px;
   font-size: 14px;
   align-self: center;
-  flex-direction: column;
+  position: absolute;
+  top: 1100px;
 }
 
 .explore img {
   margin-bottom: 3px;
+}
+
+.middle-nav {
+  height: 80px;
+  width: 100%;
+  background-image: url(../img/bg-grey.jpg);
+  background-repeat: repeat-x;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-list {
+  padding-left: 15%;
+  display: flex;
+  align-items: center;
+}
+.middle-list li {
+  font-family: sans-serif;
+  color: lightgrey;
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: none;
+  padding: 5px 10px;
+}
+
+.middle-list img {
+  margin-left: -15px;
+}
+
+#home {
+  color: white;
+}
+
+#more {
+  color: #dc7725;
+}
+
+.search {
+ display:  flex;
+ align-items: center;
+ padding-right: 15%;
+ font-family: sans-serif;
+ color: #bdbdb7;
+ font-size: 17px;
+ letter-spacing: 1px;
+ font-weight: bold;
+}
+
+.search img {
+  padding-left: 10px;
+}
+
+.module {
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.rafting {
+  background-image: url(../img/raft.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 800px
+}
+
+.basecamp {
+  background-image: url(../img/basecamp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 400px;
+}
+
+.backpacking {
+  background-image: url(../img/backpacking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 400px
+}
+
+.canoe {
+  background-image: url(../img/canoe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 400px;
+}
+
+.photography {
+  background-image: url(../img/photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 400px;
+}
+
+.custom {
+  background-image: url(../img/custom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: 800px;
+}
+
+.panel {
+  height: 400px;
+  flex-grow: 1;
 }
