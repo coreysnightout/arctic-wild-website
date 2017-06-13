@@ -1,9 +1,15 @@
 $large-width: 768px;
-
+$nav-width: 1110px;
 
 
 @mixin large {
   @media (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin nav {
+  @media (max-width: #{$nav-width}) {
     @content;
   }
 }

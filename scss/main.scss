@@ -3,9 +3,11 @@
 
 
 body {
+  padding: 0;
   margin: 0;
   position: relative;
 }
+
 .container {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
@@ -15,6 +17,10 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
+  @include large {
+    background-image: url(../img/hero.jpg);
+    height: 500px;
+  }
 }
 
 .nav {
@@ -22,7 +28,7 @@ body {
   justify-content: space-between;
   align-self: center;
   align-items: center;
-  width: 1200px;
+  width: 90%;
   height: 200px;
 }
 
@@ -42,10 +48,14 @@ body {
   align-self: center;
 }
 
+
 .nav-list {
   font-family: 'Fjalla One', sans-serif;
   color: white;
   list-style: none;
+  @include nav {
+    display: none;
+  }
 }
 
 li {
@@ -70,6 +80,11 @@ li .arrow {
   width: 800px;
   display: flex;
   margin-top: 100px;
+  @include large {
+    margin-top: -65px;
+    width: 600px;
+    // margin-bottom: 0px;
+  }
 }
 
 .alaska {
@@ -87,6 +102,10 @@ h5 {
   margin-bottom: -45px;
   margin-left: 30px;
   text-align: center;
+  @include large {
+    margin-bottom: -35px;
+    font-size: .9em;
+  }
 }
 
 .head-sep {
@@ -135,6 +154,9 @@ h5 {
   align-self: center;
   position: absolute;
   top: 1100px;
+  @include large {
+    display: none;
+  }
 }
 
 .explore img {
@@ -150,6 +172,9 @@ h5 {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
+  @include large {
+    display: none;
+  }
 }
 
 .middle-list {
