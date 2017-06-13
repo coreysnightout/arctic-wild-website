@@ -9,7 +9,6 @@ body {
   max-width: 100%;
   background-position: center;
   display: flex;
-  /*justify-content: center;*/
   flex-direction: column;
 }
 
@@ -97,13 +96,30 @@ h5 {
   display: block;
   padding: 20px;
   border-radius: 100%;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.3);
   position: relative;
 }
 
 .play img {
   position: absolute;
-  bottom: 27px;
+  bottom: 26px;
   right: 25px;
   width: 35%;
+}
+.explore {
+  background-color: #dc7725;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  align-self: center;
+  flex-direction: column;
+}
+
+.explore img {
+  margin-bottom: 3px;
 }
